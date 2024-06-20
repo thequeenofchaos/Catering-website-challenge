@@ -1,0 +1,400 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+    height: 202px;
+    width: 100%;
+    padding: 36px;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.logo_h {
+    width: 243px;
+    position: absolute;
+
+    top: 36px;
+    left: 36px;
+}
+.iso {
+    display: none;
+}
+.burger {
+    display: none;
+}
+.headerpic {
+    width: 100%;
+}
+ul:not(.empresas ul){
+    font-family: "roboto-regular", Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    
+    list-style-type: none;
+}
+header nav ul {
+    display: flex;
+    float: right;
+
+    width: 502px;
+    justify-content: space-between;
+    
+/* color: black; CAL FILAR MÉS PRIM */
+    
+}
+a {
+    text-decoration: none;
+}
+ul a {
+    
+    color: black;
+}
+main {
+    /* margin-top: 235px; */
+    display: flex;
+    flex-direction: column;
+    gap: 33px;
+    margin-bottom: 20px;
+
+}
+.breadcrumb ul {
+    width: 100%;
+    display: flex;
+    /* gap: 11px; */
+
+    margin-left: 36px;
+
+}
+.breadcrumb li:not(:last-child)::after {
+    content: ">";
+    margin: 0 11px;
+
+}
+.carroussel {
+    position: relative;
+
+    margin: 0 auto;
+    height: 48vw;
+
+    display: flex;
+    align-items: center;
+}
+/* .control {
+    position: relative;
+    z-index: 5;
+
+    height: fit-content; NO VA
+    
+} */
+#image {
+    height: 100%;
+    overflow: hidden;
+
+    /* position: relative; */
+}
+#image img {
+    width: 100%;
+    /* position: absolute; */
+
+    /* top: -60; */
+}
+#back, #forward {
+    position: absolute;
+    z-index: 10;
+    
+    width: 7vw;
+    height: 7vw;
+    
+     filter: invert();
+}
+#forward img, #back img {
+    height: 100%;
+}
+#back {
+    left: 10px;
+    transform: rotate(180deg);
+}
+#forward {
+    right: 10px;
+}
+.nomames {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 108px;
+    padding-bottom: 80px;
+
+}
+h2 {
+    display: flex;
+    justify-content: center;
+   /* display: block;
+
+    width: 100%;
+    margin: 0 auto;  */
+
+    font-family: "roboto-regular", Arial, Helvetica, sans-serif;
+    font-size: 48px;
+
+    text-align: center;
+}
+h3 {
+    font-family: "roboto-light", Arial, Helvetica, sans-serif;
+    font-size: 48px;
+}
+h4, .h4 {
+    font-family: "roboto-light", Arial, Helvetica, sans-serif;
+    font-size: 32px;
+
+    display: flex;
+    justify-content: center;
+}
+fieldset {
+    width: 50%;
+    border: none;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    padding-top: 70px;
+
+}
+fieldset ul {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+
+    font-family: "roboto-regular", Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+fieldset span {
+    font-family: "roboto-light", Arial, Helvetica, sans-serif;
+    
+}
+fieldset ul li {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    
+}
+#nom, #empresa, #web, #pax, #email {
+    height: 36px;
+
+}
+input, textarea {
+    border: none;
+    background-color: rgba(148, 148, 148, 0.10);
+    
+}
+textarea {
+    min-height: 194px;
+}
+fieldset div {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+fieldset div, fieldset a {
+    font-family: "roboto-regular", Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #000;
+}
+button {
+    width: 175px;
+    height: 36px; 
+    border-radius: 2px; 
+    background-color: #069697;
+    border: none;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+
+    font-family: "roboto-medium", Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: white;
+
+
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.25);
+
+}
+.naltres {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    width: calc(100% - 72px);
+    margin: 0 auto;
+
+    font-family: "roboto-regular", Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+.naltres article {
+    display: flex;
+    gap: 75px;
+}
+.flip {
+    flex-direction: row-reverse;
+}
+.naltres div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+
+}
+.naltres a {
+    width: 175px;
+    height: 36px;
+
+    border-radius: 2px;
+    background-color: #069697;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.25); 
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: "roboto-medium", Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: white;
+}
+.pilotas {
+    width: 255px;
+    height: 373px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.menus h2 {
+    margin-bottom: 91px;
+}
+.ostia_pilotas {
+
+    width: 255px;
+    border-radius: 50%;
+}
+.botons {
+    width: 102px;
+    height: 36px;
+
+    border-radius: 2px;
+    background-color: #069697;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.25); 
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: "roboto-medium", Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: white;
+}
+.empresas {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    gap: 33px;
+
+    font-family: "roboto-regular", Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+.empresas h2 {
+    width: 100%;
+}
+.empresas article {
+    width: 40%;
+}
+.empresas h3 {
+    margin: 10px 0;
+}
+.empresas div {
+    gap: 26px;
+}
+.empresas img {
+    width: 100%;
+}
+.empresas ul, .empresas p{
+    line-height: 200%;
+    width: 90%;
+    margin: 0 auto;
+}
+.br {
+    display: block;
+    margin-top: 23px;
+    line-height: 26px;
+
+}
+footer {
+    background-color: black;
+    height: 205px;
+
+    font-family: "roboto-regular", Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.four-cols {
+    
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+footer p, footer address, footer .txt {
+
+    width: 211px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+footer .tiny {
+    width: 211px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.tiny img {
+    height: 100%;
+    
+}
+.tiny a {
+    height: 45px;
+}
+.icon:hover {
+    filter: hue-rotate(-60deg);
+    
+}
+.icon {
+    width: 45px;
+    filter: invert();
+}
+footer a {
+    text-decoration: none;
+    color: white;
+}
+footer a:hover {
+    color: lightgray;
+}
+.menus {
+    
+    padding: 33px;
+}
+address {
+    text-decoration: none;
+    text-emphasis-style: none;
+}

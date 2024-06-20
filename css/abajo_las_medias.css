@@ -1,0 +1,143 @@
+@media screen and (max-width:990px) {
+    header {
+        height: 110px;
+        display: flex;
+        align-items: center;
+    }
+    .logo_h {
+        display: none;
+    }
+    .iso {
+        width: 100px;
+        display: inline-block;
+
+        position: absolute;
+        left: 15px;
+ }
+    header nav ul {
+        width: 400px;
+    }
+    .breadcrumb {
+        display: none;
+    }
+    .naltres {
+        width: 100%;
+    }
+    .naltres article {
+        /* flex-wrap: wrap; */
+        justify-content: center;
+        flex-direction: column-reverse;
+        gap: 18px;
+
+    }
+    .naltres div {
+        margin: 0 20px;
+        max-width: 586px;
+    }
+    /* picture {
+        height: fit-content;
+    } */
+    .naltres img {
+        width: 100%;
+    }
+    .nomames {
+        flex-wrap: wrap;
+    }
+    .menus h2 {
+        margin-bottom: 50px;
+    }
+    fieldset {
+        width: 80%;
+    }
+    footer {
+        height: fit-content;
+        padding: 45px 0 22px 0;
+        gap: 18px;
+    }
+    .four-cols {
+         flex-direction: column;
+        gap: 18px;
+    }
+    
+}
+@media screen and (max-width:586px) {
+
+    header {
+        height: 97px;
+        position: relative;
+    }
+    .logo_h {
+        display: none;
+    }
+    .iso {
+        display: block;
+        width: 80px;
+    }
+    #mainmenu {
+        display: none;
+        background-color: white;
+        border: 1px solid black;
+        width: fit-content;
+        /* z-index: 5; */
+        position: absolute;
+        top: 20px;
+        right: 80px;
+        padding: 20px;
+        
+    }
+    #mainmenu a {
+        display: inline-block;
+        width: 100%;
+    }
+    #mainmenu li:hover {
+        background-color: lightgray;
+    }
+    header nav ul {
+        /* display: none; */
+        flex-direction: column;
+        gap: 33px;
+        text-align: center;
+        width: 100px;
+    }
+    .burger {
+        display: block;
+        width: 40px;
+    }
+    .headerpic, .carroussel {
+        display: none;
+    }
+    h3 {
+        font-size: 36px;
+        text-align: center;
+     }
+    .naltres {
+        gap: 33px;
+    }
+    .naltres div {
+        align-items: center;
+    }
+    .naltres h3, .naltres p {
+        width: calc(100% - 40px);
+        
+        display: flex;
+        justify-content: center;
+
+    } 
+    .naltres h2{
+        
+        display: flex;
+        text-align: center;
+        
+
+    }
+    .naltres a {
+        width: calc(100% - 20px);
+    }
+    fieldset {
+        width: calc(100% - 40px);
+    }
+    .empresas article {
+        width: calc(100% - 40px);
+    }
+
+}
